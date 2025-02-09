@@ -1,0 +1,21 @@
+<Package
+  ...
+  xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+  IgnorableNamespaces="uap uap3 mp">
+  ...
+    <Applications>
+      <Application Id="App" ... >
+        ...
+        <Extensions>
+          ...
+          <uap3:Extension Category="windows.appExtension">
+            <uap3:AppExtension Name="com.microsoft.windows.terminal.settings"
+                               Id="<id>"
+                               PublicFolder="Public">
+            </uap3:AppExtension>
+          </uap3:Extension>
+        </Extensions>
+      </Application>
+    </Applications>
+    ...
+</Package>
